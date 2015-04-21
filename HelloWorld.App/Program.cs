@@ -10,7 +10,9 @@ namespace HelloWorld.App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world!");
+            var greeter = new Greeter();
+            var greeting = greeter.GetGreeting("Adriana");
+            Console.WriteLine(greeting);
         }
     }
 }
